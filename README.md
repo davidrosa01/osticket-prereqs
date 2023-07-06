@@ -17,12 +17,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Azure Tenant & Subscription 
-- Rescource Group
-- Virtual Machine
-- Subnet
+- Create Azure Tenant and have a active subscription 
+- Create Rescource Group on Azure
+- Create Virtual Machine(VM) and put inside of created resource group
 
-<h2>Installation Steps</h2>
+  **Make sure VM has atleast 4 vcpus and use Windows 10 as Images** 
+- Virtual network and subnets get created automatically once VM created
+
+<h2></h2>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
