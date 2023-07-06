@@ -17,20 +17,47 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Create Azure Tenant and have a active subscription 
-- Create Rescource Group on Azure
-- Create Virtual Machine(VM) and put inside of created resource group
+- Install / Enable IIS in Windows WITH
+CGI, Common HTTP Features and IIS Management Console
+- Install PHP Manager for IIS
+- Install the Rewrite Module
+- Download PHP and unzip the contents into C:\PHP
+- Install VC_redist.x86.exe
+- Install MySQL 5.5.62
 
-  **Make sure VM has atleast 4 vcpus and use Windows 10 as Images** 
-- Virtual network and subnets get created automatically once VM created
 
-<h2></h2>
+<h2>Finalizing osTicket Download</h2>
+
+<p>
+<img src="Screen Shot 2023-07-06 at 5.47.54 PM" height="80%" width="80%" alt=""/>
+</p>
+
+<p>
+
+  </p>
+<br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Go to sites -> Default -> osTicket
+On the right, click “Browse *:80”
+
+Note that some extensions are not enabled
+Go back to IIS, sites -> Default -> osTicket
+Double-click PHP Manager
+Click “Enable or disable an extension”
+Enable: php_imap.dll
+Enable: php_intl.dll
+Enable: php_opcache.dll
+Refresh the osTicket site in your browse, observe the changes
+
+Assign Permissions: ost-config.php
+Disable inheritance -> Remove All
+New Permissions -> Everyone -> All
+
+
 </p>
 <br />
 
@@ -38,14 +65,34 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Continue Setting up osTicket in the browser (click Continue)
+Name Helpdesk
+Default email (receives email from customers)
+
+From the Installation Files, download and install HeidiSQL.
+Open Heidi SQL
+Create a new session, root/Password1
+Connect to the session
+Create a database called “osTicket”
+
+Continue Setting up osticket in the browser
+MySQL Database: osTicket
+MySQL Username: root
+MySQL Password: Password1
+Click “Install Now!”
+
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
+
+<p> Congratulations, hopefully it is installed with no errors!
+Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+
+End Users osTicket URL:
+http://localhost/osTicket/ 
+
+Clean up
+Delete: C:\inetpub\wwwroot\osTicket\setup
+Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+</p>
