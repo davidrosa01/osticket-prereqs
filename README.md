@@ -89,6 +89,12 @@ CGI, Common HTTP Features and IIS Management Console
 
 <p>
 
+<img width="80%" height="80%" alt="Screen Shot 2023-07-06 at 9 47 59 PM" src="https://github.com/davidrosa01/osticket-prereqs/assets/119774564/ac727f8d-14cf-4fde-a9db-bb7ca0630ef8">  
+
+</p>
+
+<p>
+
 16. Clean up
     - Delete the "C:\inetpub\wwwroot\osTicket\setup" folder to remove any setup files that are no longer needed
 17. Set permissions to "Read" only
