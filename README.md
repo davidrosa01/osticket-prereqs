@@ -29,7 +29,7 @@ CGI, Common HTTP Features and IIS Management Console
 <h2>Finalizing osTicket Install</h2>
 
 <p>
-<img src="Screen Shot 2023-07-06 at 5.47.54 PM" height="80%" width="80%" alt=""/>
+<img width="80%" height="80%" alt="Screen Shot 2023-07-06 at 5 47 54 PM" src="https://github.com/davidrosa01/osticket-prereqs/assets/119774564/a3a2914a-83f9-4cb4-b2b3-f177dc61cb3e">
 </p>
 
 <p>
@@ -46,7 +46,7 @@ CGI, Common HTTP Features and IIS Management Console
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="80%" height="80%" alt="Screen Shot 2023-07-06 at 5 52 22 PM" src="https://github.com/davidrosa01/osticket-prereqs/assets/119774564/b9ae7563-71cc-429a-bfe8-ed4cafa7a7a1">
 </p>
 
 <p>
@@ -67,7 +67,9 @@ CGI, Common HTTP Features and IIS Management Console
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+<img width="80%" height="80%" alt="Screen Shot 2023-07-06 at 5 57 22 PM" src="https://github.com/davidrosa01/osticket-prereqs/assets/119774564/b31d97bc-db79-4bc3-a431-22327b7b5982">
+
 </p>
 
 <p>
